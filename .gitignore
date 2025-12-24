@@ -1,0 +1,17 @@
+.DS_Store
+thumbs.db
+
+.env
+
+.vscode/
+.idea/
+*.iml
+
+node_modules/
+dist/
+
+target/
+*.log
+
+
+*.tmnt
