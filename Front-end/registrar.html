@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registro | Sistema de Inventario</title>
+   <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+   <main class="acceso">
+      <section class="acceso__contenedor">
+
+         <!-- ENCABEZADO -->
+         <header class="acceso__encabezado">
+            <h1 class="acceso__titulo">Sistema de Inventario</h1>
+            <h3 class="acceso__subtitulo">Registro de usuario</h3>
+         </header>
+
+         <!-- FORMULARIO -->
+         <form class="acceso__formulario" id="formRegistro">
+
+            <div class="campo">
+               <label
+                  class="campo__etiqueta"
+                  for="nombreCompleto">
+                  Nombre completo
+               </label>
+
+               <input
+                  class="campo__input"
+                  type="text"
+                  id="nombreCompleto"
+                  name="nombreCompleto"
+                  required
+                  placeholder=" Ej: José Cardenas Santiago"
+               >
+            </div>
+
+            <div class="campo">
+               <label
+                  class="campo__etiqueta"
+                  for="usuario">
+                  Usuario
+               </label>
+
+               <input
+                  class="campo__input"
+                  type="text"
+                  id="usuario"
+                  name="usuario"
+                  required
+                  placeholder="Ej: usuario123"
+               >
+            </div>
+
+            <div class="campo">
+               <label
+                  class="campo__etiqueta"
+                  for="email">
+                  Correo electrónico
+               </label>
+
+               <input
+                  class="campo__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Ej: jose@gmail.com"
+               >
+            </div>
+
+            <div class="campo">
+               <label
+                  class="campo__etiqueta"
+                  for="password">
+                  Contraseña
+               </label>
+
+               <input
+                  class="campo__input"
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  placeholder="********"
+               >
+            </div>
+
+            <div class="campo">
+               <label
+                  class="campo__etiqueta"
+                  for="confirmarPassword">
+                  Confirmar contraseña
+               </label>
+
+               <input
+                  class="campo__input"
+                  type="password"
+                  id="confirmarPassword"
+                  name="confirmarPassword"
+                  required
+                  placeholder="********"
+               >
+            </div>
+
+            <div class="campo">
+               <button
+                  type="submit"
+                  class="boton boton--primario">
+                  Registrarse
+               </button>
+            </div>
+
+         </form>
+
+         <!-- PIE -->
+         <footer class="acceso__pie">
+            <p>
+               ¿Ya tienes cuenta?
+               <a href="login.html">Volver al login</a>
+            </p>
+         </footer>
+
+      </section>
+   </main>
+
+</body>
+</html>

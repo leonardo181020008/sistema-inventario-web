@@ -1,4 +1,8 @@
 :root {
+   --color-primary: ;
+   --color-secondary: ;
+   --color-tertiary: ;
+   --color-cuarternary: ;
    --font-family-title: 'Monserrat', sans-serif;
    --font-family-general: 'Inter', sans-serif;
 }

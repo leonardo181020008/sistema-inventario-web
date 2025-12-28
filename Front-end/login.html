@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login | Sistema de Inventario</title>
+   <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+   <main class="acceso">
+      <section class="acceso__contenedor">
+
+         <!-- ENCABEZADO -->
+         <header class="acceso__encabezado">
+            <h1 class="acceso__titulo">Sistema de Inventario</h1>
+            <h3 class="acceso__subtitulo">Iniciar sesión</h3>
+         </header>
+
+         <!-- FORMULARIO -->
+         <form class="acceso__formulario" id="formLogin">
+
+            <div class="campo">
+               <label
+                  class="campo__etiqueta"
+                  for="usuario">
+                  Usuario
+               </label>
+
+               <input
+                  class="campo__input"
+                  type="text"
+                  id="usuario"
+                  name="usuario"
+                  required
+                  placeholder="Ej: usuario123"
+               >
+            </div>
+
+            <div class="campo">
+               <label
+                  class="campo__etiqueta"
+                  for="password">
+                  Contraseña
+               </label>
+
+               <input
+                  class="campo__input"
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  placeholder="********"
+               >
+            </div>
+
+            <div class="campo">
+               <button
+                  type="submit"
+                  class="boton boton--primario">
+                  Ingresar
+               </button>
+            </div>
+
+         </form>
+
+         <!-- PIE -->
+         <footer class="acceso__pie">
+            <p>
+               ¿No tienes cuenta?
+               <a href="registrar.html">Regístrate</a>
+            </p>
+         </footer>
+
+      </section>
+   </main>
+
+</body>
+</html>
