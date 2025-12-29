@@ -1,8 +1,145 @@
 :root {
-   --color-primary: ;
-   --color-secondary: ;
-   --color-tertiary: ;
-   --color-cuarternary: ;
-   --font-family-title: 'Monserrat', sans-serif;
-   --font-family-general: 'Inter', sans-serif;
+
+   /* =========================
+      TIPOGRAFÍA
+   ========================= */
+
+   --fuente-principal: "Inter", sans-serif;
+   --fuente-titulos: "Montserrat", sans-serif;
+
+   --peso-light: 300;
+   --peso-regular: 400;
+   --peso-medium: 500;
+   --peso-semibold: 600;
+   --peso-bold: 700;
+
+   --texto-xs: 12px;
+   --texto-sm: 14px;
+   --texto-md: 16px;
+   --texto-lg: 18px;
+   --texto-xl: 22px;
+   --texto-2xl: 28px;
+
+
+
+   /* =========================
+      COLORES BASE (DESCANSO VISUAL)
+   ========================= */
+
+   /* Fondo principal (gris azulado) */
+   --color-fondo: #0F172A;            /* slate-900 */
+   
+   /* Contenedores */
+   --color-contenedor: #111827;       /* slate-800 */
+   --color-superficie: #1E293B;       /* slate-700 */
+
+   /* Bordes */
+   --color-borde: #334155;
+   --color-borde-suave: #475569;
+
+
+
+   /* =========================
+      PALETA CYAN (MARCA)
+   ========================= */
+
+   --color-primario: #09B2EB;
+   --color-primario-hover: #38BDF8;
+   --color-primario-activo: #0284C7;
+   --color-primario-suave: rgba(9, 178, 235, 0.25);
+
+   --color-acento: #22D3EE;
+   --color-acento-suave: rgba(34, 211, 238, 0.25);
+
+
+
+   /* =========================
+      TEXTO (MODO OSCURO)
+   ========================= */
+
+   --texto-principal: #E5E7EB;
+   --texto-secundario: #CBD5E1;
+   --texto-deshabilitado: #94A3B8;
+   --texto-invertido: #020617;
+   --texto-enlace: var(--color-primario);
+
+
+
+   /* =========================
+      ESTADOS
+   ========================= */
+
+   --estado-exito: #22C55E;
+   --estado-advertencia: #FACC15;
+   --estado-peligro: #EB0909;
+
+   --estado-exito-suave: rgba(34, 197, 94, 0.25);
+   --estado-advertencia-suave: rgba(250, 204, 21, 0.25);
+   --estado-peligro-suave: rgba(235, 9, 9, 0.25);
+
+
+
+   /* =========================
+      ESPACIADOS
+   ========================= */
+
+   --espacio-xxs: 2px;
+   --espacio-xs: 4px;
+   --espacio-sm: 8px;
+   --espacio-md: 16px;
+   --espacio-lg: 24px;
+   --espacio-xl: 32px;
+   --espacio-2xl: 48px;
+
+
+
+   /* =========================
+      RADIOS
+   ========================= */
+
+   --radio-sm: 6px;
+   --radio-md: 10px;
+   --radio-lg: 14px;
+   --radio-xl: 18px;
+   --radio-full: 999px;
+
+
+
+   /* =========================
+      SOMBRAS (PROFUNDIDAD REAL)
+   ========================= */
+
+   --sombra-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+   --sombra-sm: 0 4px 8px rgba(0, 0, 0, 0.45);
+   --sombra-md: 0 12px 24px rgba(0, 0, 0, 0.55);
+   --sombra-lg: 0 24px 48px rgba(0, 0, 0, 0.65);
+
+
+
+   /* =========================
+      TRANSICIONES
+   ========================= */
+
+   --transicion-rapida: 0.15s ease;
+   --transicion-media: 0.25s ease;
+   --transicion-lenta: 0.4s ease;
+
+
+
+   /* =========================
+      GRADIENTES (NEÓN SUTIL)
+   ========================= */
+
+   --gradiente-fondo: linear-gradient(
+      180deg,
+      #020617 0%,
+      #0F172A 100%
+   );
+
+   --gradiente-primario: linear-gradient(
+      135deg,
+      #22D3EE 0%,
+      #09B2EB 100%
+   );
+
 }

@@ -4,23 +4,32 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Registro | Sistema de Inventario</title>
-   <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="./css/base/reset.css">
+   <link rel="stylesheet" href="./css/base/fonts.css">
+   <link rel="stylesheet" href="./css/base/variables.css">
+   <link rel="stylesheet" href="./css/base/global.css">
+
+   <link rel="stylesheet" href="./css/components/campos.css">
+   <link rel="stylesheet" href="./css/components/botones.css">
+
+   <link rel="stylesheet" href="./css/pages/acceso.css">
 </head>
 <body>
 
-   <main class="acceso">
-      <section class="acceso__contenedor">
+   <main class="acceso acceso--registro">
+      <section class="acceso__contenedor acceso__contenedor--registro">
 
          <!-- ENCABEZADO -->
          <header class="acceso__encabezado">
             <h1 class="acceso__titulo">Sistema de Inventario</h1>
-            <h3 class="acceso__subtitulo">Registro de usuario</h3>
+            <h2 class="acceso__subtitulo">Registro de usuario</h2>
          </header>
 
          <!-- FORMULARIO -->
          <form class="acceso__formulario" id="formRegistro">
 
-            <div class="campo">
+            <div class="acceso__contenido">
+               <div class="campo">
                <label
                   class="campo__etiqueta"
                   for="nombreCompleto">
@@ -28,7 +37,7 @@
                </label>
 
                <input
-                  class="campo__input"
+                  class="campo__input campo__input--registro"
                   type="text"
                   id="nombreCompleto"
                   name="nombreCompleto"
@@ -45,7 +54,7 @@
                </label>
 
                <input
-                  class="campo__input"
+                  class="campo__input campo__input--registro"
                   type="text"
                   id="usuario"
                   name="usuario"
@@ -62,7 +71,7 @@
                </label>
 
                <input
-                  class="campo__input"
+                  class="campo__input campo__input--registro"
                   type="email"
                   id="email"
                   name="email"
@@ -79,7 +88,7 @@
                </label>
 
                <input
-                  class="campo__input"
+                  class="campo__input campo__input--registro"
                   type="password"
                   id="password"
                   name="password"
@@ -96,7 +105,7 @@
                </label>
 
                <input
-                  class="campo__input"
+                  class="campo__input campo__input--registro"
                   type="password"
                   id="confirmarPassword"
                   name="confirmarPassword"
@@ -108,9 +117,10 @@
             <div class="campo">
                <button
                   type="submit"
-                  class="boton boton--primario">
+                  class="boton boton--primario boton--registro">
                   Registrarse
                </button>
+            </div>
             </div>
 
          </form>

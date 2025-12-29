@@ -1,0 +1,75 @@
+/* CONTEXTO GENERAL (login y registro) */
+.acceso {
+   min-height: 100vh;
+   display: grid;
+   place-items: center;
+   background: var(--gradiente-fondo);
+}
+
+/* CONTENEDOR */
+.acceso__contenedor {
+   background: rgba(20, 20, 40, 0.55); /* ← ya no blanco */
+   backdrop-filter: blur(14px);
+   border: 1px solid var(--color-borde);
+
+   padding: var(--espacio-2xl);
+   border-radius: var(--radio-xl);
+   box-shadow:
+      0 20px 40px rgba(0,0,0,0.6),
+      inset 0 0 0 1px rgba(255,255,255,0.05);
+
+   max-width: 500px;
+   width: 100%;
+}
+
+/* REGISTRO (modificador correcto) */
+.acceso--registro .acceso__contenedor {
+   max-width: 560px;
+}
+
+/* ENCABEZADO */
+.acceso__encabezado {
+   text-align: center;
+   margin-bottom: var(--espacio-2xl);
+}
+
+/* FORMULARIO */
+.acceso__formulario {
+   display: grid;
+   justify-content: center;
+}
+
+.acceso__contenido {
+   max-width: 400px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: var(--espacio-lg);
+}
+
+@media (max-width:600px) {
+   .acceso__contenedor {
+      padding: var(--espacio-xl);
+      border: none;
+      box-shadow: none;
+   }
+
+   .acceso__contenido {
+      max-width: 100%;
+      width: 100%;
+   }
+}
+
+.campo__input {
+   min-height: 48px;
+}
+
+.boton {
+   min-height: 48px;
+}
+
+/* PIE */
+.acceso__pie {
+   text-align: center;
+   margin-top: var(--espacio-xl);
+}

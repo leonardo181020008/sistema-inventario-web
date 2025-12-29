@@ -1,3 +1,48 @@
-html {
-   font-size: 100%;
+/* =========================
+   BASE GLOBAL DEL SITIO
+========================= */
+
+body {
+   min-height: 100vh;
+
+   font-family: var(--fuente-principal);
+   font-size: var(--texto-md);
+   color: var(--texto-principal);
+
+   background:
+      radial-gradient(
+         circle at top,
+         rgba(9, 178, 235, 0.08),
+         transparent 40%
+      ),
+      var(--gradiente-fondo);
+
+   background-attachment: fixed;
+}
+
+/* =========================
+   TIPOGRAFÍA GENERAL
+========================= */
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: var(--fuente-titulos);
+   font-weight: var(--peso-semibold);
+   color: var(--texto-principal);
+}
+
+p {
+   color: var(--texto-secundario);
+}
+
+/* =========================
+   ENLACES
+========================= */
+
+a {
+   color: var(--texto-enlace);
+   transition: color var(--transicion-rapida);
+}
+
+a:hover {
+   color: var(--color-primario-hover);
 }
